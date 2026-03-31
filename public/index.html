@@ -274,9 +274,9 @@
     <div class="fg"><label>Ingredientes *</label><input id="p-ing" placeholder="Calabresa, cebola, mussarela..."></div> 
     <div class="fg"><label>Descrição</label><input id="p-desc" placeholder="Breve descrição..."></div>
     <div class="fr3">
-      <div class="fg"><label>Preço P (R$)</label><input id="p-pp" type="number" step="0.01" min="0" placeholder="35,00"></div> /* Preço da pizza tamanho P */
-      <div class="fg"><label>Preço M (R$)</label><input id="p-pm" type="number" step="0.01" min="0" placeholder="45,00"></div> /* Preço da pizza tamanho M */
-      <div class="fg"><label>Preço G (R$)</label><input id="p-pg" type="number" step="0.01" min="0" placeholder="55,00"></div> /* Preço da pizza tamanho G */ 
+      <div class="fg"><label>Preço P (R$)</label><input id="p-pp" type="number" step="0.01" min="0" placeholder="35,00"></div> 
+      <div class="fg"><label>Preço M (R$)</label><input id="p-pm" type="number" step="0.01" min="0" placeholder="45,00"></div> 
+      <div class="fg"><label>Preço G (R$)</label><input id="p-pg" type="number" step="0.01" min="0" placeholder="55,00"></div> 
     </div>
     <div class="fg"><label>Disponível</label>
       <select id="p-disp">
@@ -284,20 +284,20 @@
         <option value="false">❌ Não</option>
       </select>
     </div>
-    <div class="modal-foot"> /* Rodapé do modal */
+    <div class="modal-foot"> 
       <button class="btn btn-ghost" onclick="fechar('m-pizza')">Cancelar</button>
       <button class="btn btn-red"   onclick="salvarPizza()">Salvar</button>
     </div>
   </div>
 </div>
 
-<div id="m-cliente" class="modal-bg"> /* Modal para adicionar/editar cliente */
+<div id="m-cliente" class="modal-bg">
   <div class="modal">
     <h3 id="m-cli-t">Novo Cliente</h3>
     <input type="hidden" id="c-id">
     <div class="fr2">
-      <div class="fg"><label>Nome *</label><input id="c-nome" placeholder="João da Silva"></div> /* Nome do cliente */
-      <div class="fg"><label>Telefone *</label><input id="c-tel" placeholder="(11) 99999-9999"></div> /* Telefone do cliente */
+      <div class="fg"><label>Nome *</label><input id="c-nome" placeholder="João da Silva"></div> 
+      <div class="fg"><label>Telefone *</label><input id="c-tel" placeholder="(11) 99999-9999"></div>
     </div>
     <div class="fr2"> 
       <div class="fg"><label>Rua</label><input id="c-rua" placeholder="Rua das Flores"></div>
@@ -347,7 +347,7 @@
   </div>
 </div>
 
-<div id="m-status" class="modal-bg"> /* Modal para atualizar status */
+<div id="m-status" class="modal-bg"> 
   <div class="modal" style="max-width:330px">
     <h3>Atualizar Status</h3>
     <input type="hidden" id="st-id">
@@ -383,12 +383,12 @@
   </div>
 </div>
 
-<div id="m-pedido-mesa" class="modal-bg"> /* Modal para adicionar/editar pedido de mesa */
+<div id="m-pedido-mesa" class="modal-bg"> 
   <div class="modal lg">
     <h3>Pedido de Mesa</h3>
     <div class="fr2">
       <div class="fg"><label>Mesa *</label><select id="pm-mesa"><option value="">— Selecione a mesa —</option><option value="1">Mesa 1</option><option value="2">Mesa 2</option><option value="3">Mesa 3</option><option value="4">Mesa 4</option><option value="5">Mesa 5</option><option value="6">Mesa 6</option><option value="7">Mesa 7</option><option value="8">Mesa 8</option><option value="9">Mesa 9</option><option value="10">Mesa 10</option></select></div>
-      <div class="fg"><label>Cliente (opcional)</label><select id="pm-cli"><option value="">— Sem cadastro —</option></select></div> /* Cliente (opcional) */
+      <div class="fg"><label>Cliente (opcional)</label><select id="pm-cli"><option value="">— Sem cadastro —</option></select></div>
     </div>
     <div class="div"></div> /* Espaçamento */
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:7px">
@@ -405,13 +405,13 @@
     </div>
     <div class="fg"><label>Observações</label><textarea id="pm-obs" rows="2" placeholder="Sem cebola, bem passado..."></textarea></div> /* Observações do pedido */
     <div class="modal-foot">
-      <button class="btn btn-ghost" onclick="fechar('m-pedido-mesa')">Cancelar</button> /* Botão para cancelar */
-      <button class="btn btn-red"   onclick="salvarPedidoMesa()">Confirmar Pedido</button> /* Botão para confirmar o pedido */
+      <button class="btn btn-ghost" onclick="fechar('m-pedido-mesa')">Cancelar</button>
+      <button class="btn btn-red"   onclick="salvarPedidoMesa()">Confirmar Pedido</button> 
     </div>
   </div>
 </div>
 
-<div id="m-fechar-mesa" class="modal-bg"> /* Modal para fechar mesa */
+<div id="m-fechar-mesa" class="modal-bg"> 
   <div class="modal" style="max-width:440px"> 
     <h3 id="fm-titulo">Fechar Mesa</h3>
     <div id="fm-resumo" style="margin-bottom:12px"></div>
